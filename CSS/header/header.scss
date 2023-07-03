@@ -1,0 +1,35 @@
+header {
+    padding: 1em 1em 0 1em;
+
+    a {
+        width: 15%;
+    }
+
+    a img {
+        width: 80%;
+    }
+
+    a img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+
+    .menu {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: space-around;
+        list-style-type: none;
+        
+    }
+    form{
+        margin-left: 1em;
+        #search{
+            border-radius: 0.5em;
+        }
+    }
+    .btn-login{
+        margin-left: 1em;
+        border-radius: 0.5em;
+    }
+}

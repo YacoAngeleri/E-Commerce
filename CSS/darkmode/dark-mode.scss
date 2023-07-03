@@ -1,0 +1,40 @@
+    //Boton dark mode
+    .container-btn-mode {
+        display: inline-block;
+        margin: auto;
+        justify-content: right;
+        cursor: pointer;
+        z-index: 2;
+        font-size: 0;
+    }
+
+    .btn-mode {
+        display: inline-block;
+        width: 4vw;
+        height: 2.5vw;
+        border: 2px solid black;
+        transition: background-color .5s;
+    }
+
+    .btn-mode i {
+        display: block;
+        font-size: 1.2vw;
+        text-align: center;
+        line-height: 2vw;
+    }
+
+    .btn-mode.sun {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right: 1px solid transparent;
+    }
+
+    .btn-mode.moon {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .active {
+        background-color: black;
+        color: #ffcd5c !important;
+    }

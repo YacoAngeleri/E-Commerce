@@ -1,0 +1,46 @@
+
+- Crear repositorio antes que nada
+- La pagina en este primer spring se centra en la estilizacion (En el siguiente haremos lo de CRUD y demas)
+- Pagina de inicio
+-Ver figma y trello 
+- Login con validacion y que al hacer click te envie a la seccion de productos 
+- Seccion para agregar/editar/eliminar productos 
+- Seccion especial con iformacion detallada de cada producto (o de los mas importantes al menos) 
+
+
+    - Debe tener:
+        -Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.
+        -Un banner que contenga descuentos, promociones o informaciónes relevante del momento.
+        -Una galería con información del producto, como imagen, nombre del producto, precio y un enlace a la página de descripción del producto.
+        -Una página de producto que contiene la imagen, el nombre, la descripción y el precio.
+        -Un pie de página con un formulario de contacto y otras informaciónes relevantes.
+        -Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador.
+        -Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
+
+    - Elementos principales:
+        Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.       Un banner que contenga descuentos, promociones o informaciónes relevante del momento.
+        Una galería con información del producto, como imagen, nombre del producto, precio y un enlace a la página de descripción del producto.
+        página de producto que contiene la imagen, el nombre, la descripción y el precio.
+        Un pie de página con un formulario de contacto y otras informaciónes relevantes.
+        Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador.
+            Título principal
+            Campo de correo electrónico
+            Campo de contraseña
+            Botón de inicio de sesión
+        Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
+        Barra de busqueda (no se si ya lo dice arriba xd)
+        Formulario de contacto con: 
+            Campo de nombre
+            Campo de mensaje
+            Botón para enviar el mensaje
+        En el footer debe haber una seccion del desarrollador: 
+            Nombre
+            Apellido
+            Año de desarrollo.
+        La sección de agregar producto debe contener:
+            Agregar campo de imagen
+            Botón para buscar imágenes en la computadora
+            Campo para el nombre del producto
+            Campo para precio del producto
+            Campo para descripción del producto
+            Botón Agregar producto

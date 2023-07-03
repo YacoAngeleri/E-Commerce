@@ -1,0 +1,23 @@
+article{
+    
+    .productos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        section{
+            margin: 1em;
+            
+        img {
+            width: 10em;
+        }
+        p{
+            margin: 0;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    }
+}
