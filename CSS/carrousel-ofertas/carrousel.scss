@@ -1,0 +1,60 @@
+.container-carousel{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+
+#carousel {
+    width: 25%;
+    h3{
+        text-align: center;
+    }
+    .carousel-item {
+        background-color: transparent;
+    }
+    h6,p{
+        color: black;
+        font-weight: bold;
+    }
+}
+.informacion-descuentos{
+    display: flex;
+    flex-direction: column;
+    align-self:normal;
+    text-align: center;
+    margin-top: 3.5em;
+    img{
+        width: 1.5em;
+    }
+    .precio{
+        display: flex;
+        color: green;
+        .precio1{
+            margin-right: 0.5em;
+            text-decoration:line-through;
+            color: red;
+        }
+    }
+    h2, h4, .talles{
+        text-align: left;
+    }
+    .comprar{
+        display: flex;
+        justify-content: space-around;
+    }
+    h5,h6,p{
+        margin: 0.6em 0;
+        color: black;
+    }
+}
+#carousel:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03)
+}
+#carousel-producto{
+    width: 100%;
+    margin-right: 1em;
+}
+.btn-group{
+    margin: 1em 0;
+}
+}

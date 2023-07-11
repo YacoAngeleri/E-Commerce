@@ -1,9 +1,10 @@
 .container-btn-mode {
   display: inline-block;
-  margin: auto;
-  justify-content: right;
+  align-self: center;
+  text-align: right;
   cursor: pointer;
   z-index: 2;
+  width: 15%;
   font-size: 0;
 }
 
@@ -36,6 +37,4 @@
 .active {
   background-color: black;
   color: #ffcd5c !important;
-}
-
-/*# sourceMappingURL=dark-mode.css.map */
+}/*# sourceMappingURL=dark-mode.css.map */

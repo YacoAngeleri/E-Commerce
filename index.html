@@ -6,22 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Yaco Angeleri</title>
+    <link rel="stylesheet" href="CSS/styles/styles.css">
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/header/header.css">
+    <link rel="stylesheet" href="CSS/btn-login/login.css">
+    <link rel="stylesheet" href="CSS/btn-search/search.css">
+    <link rel="stylesheet" href="CSS/responsive/responsive.css">
+    <link rel="stylesheet" href="CSS/carrousel-ofertas/carrousel.css">
     <link rel="stylesheet" href="CSS/darkmode/dark-mode.css">
     <link rel="stylesheet" href="CSS/main/main.css">
+    <link rel="stylesheet" href="CSS/form/form.css">
     <link rel="stylesheet" href="CSS/footer/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
-<body>
-    <div class="container">
+<body id="body">
+
     <header>
         <nav class="navbar navbar-expand-xl" id="opciones">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://www.oracle.com/ar/education/oracle-next-education/"
-                    data-bs-toggle="tooltip" data-bs-title="Ir a pagina Oracle">
+                <a class="navbar-brand" href="#" data-bs-toggle="tooltip" data-bs-title="Ir a pagina Oracle">
                     <img src="Imagenes/Pagina/Logo.png" width="80px" alt="logo AluraGeek"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,38 +35,54 @@
                     <span class="navbar-toggler-icon"><i class="bi bi-chevron-expand"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="menu">
-                        <li class="nav-item dropdown">
+                    <ul class="menu" >
+                        <li class="nav-item dropdown" id="nav-dropdown">
                             <a class="nav-link dropdown-toggle" href="HTML/" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Todos los productos
+                                Productos
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="HTML/">Dexter y Moov</a></li>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li><a class="dropdown-item" id="dropdown-item0" href="HTML/productos.html">Todos los productos</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="HTML/">Rukawe</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item1" href="HTML/descuentos.html">Descuentos</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="HTML/">Kimikal</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item2" href="#dexter-moov">Dexter y Moov</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="HTML/">Agregar producto</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item3" href="#rukawe">Rukawe</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="HTML/">Eliminar producto</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item4" href="#kimikal">Kimikal</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" id="dropdown-item5" href="HTML/agregar-producto.html">Agregar producto</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" id="dropdown-item6" href="HTML/eliminar-producto.html">Eliminar producto</a>
+                                </li>
                             </ul>
                         </li>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?"
+                        <br>
+                        <div class="search">
+                            <input type="text" placeholder="Buscar">
+                            <div class="btn-search">
+                                <i class="bi bi-search" id="isearch"></i>
+                            </div>
+                        </div>
+                        <!-- <form class="d-flex" role="search">
+                            <input class="form-control me-2" id="input-search" type="search" placeholder="¿Que buscas?"
                                 aria-label="Search">
-                            <button class="btn btn-outline-success" id="search" type="submit">Search</button>
-                        </form>
-                        <button class="btn-login">Login</button>
+                            <button class="btn btn-outline-success" id="btn-search" type="submit">Search</button>
+                        </form> -->
+                        <button class="btn-login"><a href="HTML/login.html">Login</a></button>
                         <div class="container-btn-mode">
                             <div id="id-sun" class="btn-mode sun active">
                                 <i class="bi bi-sun"></i>
@@ -69,163 +91,330 @@
                                 <i class="bi bi-moon-stars-fill"></i>
                             </div>
                         </div>
-                        </li>
                     </ul>
                 </div>
             </div>
+
         </nav>
+        <div class="banner">
+            <h2 id="promo">Julio Promocional</h2>
+            <p id="promo1">Productos seleccionados con hasta 35% de descuento</p>
+            <button id="promo2"><a href="HTML/descuentos.html" >Ver descuentos</a></button>
+        </div>
     </header>
+    <div class="container">
+        <div class="container-carousel">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <h3>Ofertas especiales</h3>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="HTML/buzo-bujari.html"> <img src="imagenes/Ofertas/Buzo-Bujari.jpg"
+                                class="d-block w-100" alt="buzo"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>35% off en Efectivo</h6>
+                            <p>o 12 coutas sin interes con Santander Rio</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="HTML/buzo-nebraska.html"><img src="imagenes/Ofertas/Buzo-Nebraska.jpg"
+                                class="d-block w-100" alt="Campera"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>30% off en Efectivo</h6>
+                            <p>o 12 coutas sin interes con Santander Rio</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="HTML/buzo-boxy.html"><img src="imagenes/Ofertas/boxy.webp" class="d-block w-100"
+                                alt="buzo"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6>30% off en Efectivo</h6>
+                            <p>o 12 coutas sin interes con Santander Rio</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="informacion-descuentos">
+                <h3>Envios gratis a todo el pais <img src="imagenes/Ofertas/argentina.jpg" alt="Bandera de Argentina">
+                    en compras mayores a $20.000</h3>
+                <p>*Los envios se realizan en las siguientes 72 horas luego de haber sido realizada la compra*</p>
+                <hr>
+                <h3>3 Coutas sin interes con todas las tarjetas de Santander Rio <img
+                        src="imagenes/Ofertas/santnder.jpg" alt="Logo Santander Rio"> , Visa <img
+                        src="imagenes/Ofertas/visa.jpg" alt="Logo Via"> y MasterCard <img
+                        src="imagenes/Ofertas/master.jpg" alt="Logo MasterCard"> </h3>
+            </div>
+        </div>
         <main>
             <article id="dexter-moov" class="dexter-moov">
-                <h2>Dexter & Moov</h2>
+                <div class="titulo-y-ver-todo">
+                    <h2>Dexter & Moov</h2>
+                    <button><a href="HTML/productos.html">Ver todo <i class="bi bi-arrow-right"></i></a> </button>
+                </div>
                 <div class="productos">
                     <section>
-                        <img src="imagenes/Dexter-Moov/pumasport.jpg" alt="Campera Puma">
+                        <a href="HTML/campera-puma.html"><img src="imagenes/Dexter-Moov/pumasport-1.jpg"
+                                alt="Campera Puma"></a>
                         <h5>Campera Puma</h5>
                         <p>$19.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/campera-puma.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Dexter-Moov/adidasred.jpg" alt="Campera Adidas">
+                        <a href="HTML/campera-adidas.html"><img src="imagenes/Dexter-Moov/adidasred-1.jpg"
+                                alt="Campera Adidas"></a>
                         <h5>Campera Adidas</h5>
                         <p>$24.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/campera-adidas.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Dexter-Moov/ferrari.jpg" alt="Campera Ferrari">
+                        <a href="HTML/campera-ferrari.html"><img src="imagenes/Dexter-Moov/ferrari-1.jpg"
+                                alt="Campera Ferrari"></a>
                         <h5>Campera Ferrari</h5>
                         <p>$26.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/campera-ferrari.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Dexter-Moov/city.jpg" alt="Remera Manchester City">
+                        <a href="HTML/remera-city.html"><img src="imagenes/Dexter-Moov/city-1.jpg"
+                                alt="Remera Manchester City"></a>
                         <h5>Remera M City</h5>
                         <p>$12.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/remera-city.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Dexter-Moov/vans.jpg" alt="Buzo vans">
+                        <a href="HTML/buzo-vans.html"><img src="imagenes/Dexter-Moov/vans-1.jpg" alt="Buzo vans"></a>
                         <h5>Buzo Vans</h5>
                         <p>$18.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-vans.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Dexter-Moov/nikesport.jpg" alt="Buzo Nike">
+                        <a href="HTML/buzo-nike.html"><img src="imagenes/Dexter-Moov/nikesport-1.jpg"
+                                alt="Buzo Nike"></a>
                         <h5>Buzo Nike</h5>
                         <p>$19.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-nike.html">Ver producto</a>
                     </section>
-                    <button>Ver todos</button>
+                    
                 </div>
             </article>
+            <hr>
             <article id="rukawe" class="rukawe">
-                <h2>Rukawe</h2>
+                <div class="titulo-y-ver-todo">
+                    <h2>Rukawe</h2>
+                    <button><a href="HTML/productos.html">Ver todo <i class="bi bi-arrow-right"></i></a> </button>
+                </div>
                 <div class="productos">
                     <section>
-
-                        <img src="imagenes/Rukawe/Buzo-Gramado.jpg" alt="Buzo Gramado">
+                        <a href="HTML/buzo-gramado.html"><img src="imagenes/Rukawe/Buzo-Gramado.jpg"
+                                alt="Buzo Gramado"></a>
                         <h5>Buzo Gramado</h5>
                         <p>$12.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-gramado.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Rukawe/buzo-morro.jpg" alt="Buzo Morro">
+                        <a href="HTML/buzo-morro.html"><img src="imagenes/Rukawe/buzo-morro.jpg" alt="Buzo Morro"></a>
                         <h5>Buzo Morro</h5>
                         <p>$12.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-morro.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Rukawe/Buzo-Careiro2.jpg" alt="Buzo Careiro">
+                        <a href="HTML/buzo-careiro.html"><img src="imagenes/Rukawe/Buzo-Careiro2.jpg"
+                                alt="Buzo Careiro"></a>
                         <h5>Buzo Careiro</h5>
                         <p>$11.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-careiro.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Rukawe/Babucha-Mosconi.jpg" alt="Babucha Mosco">
+                        <a href="HTML/babucha-mosco.html"><img src="imagenes/Rukawe/Babucha-Mosconi.jpg"
+                                alt="Babucha Mosco"></a>
                         <h5>Babucha Mosco</h5>
                         <p>$11.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/babucha-mosco.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Rukawe/Jean-Genk.jpg" alt="Jean Genk">
+                        <a href="HTML/jean-genk.html"><img src="imagenes/Rukawe/Jean-Genk.jpg" alt="Jean Genk"></a>
                         <h5>Jean Genk</h5>
                         <p>$15.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/jean-genk.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Rukawe/Camisa-Bonfim.jpg" alt="Camisa Bonfim">
+                        <a href="HTML/camisa-bonfim.html"><img src="imagenes/Rukawe/Camisa-Bonfim.jpg"
+                                alt="Camisa Bonfim"></a>
                         <h5>Camisa Bonfim</h5>
                         <p>$10.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/camisa-bonfim.html">Ver producto</a>
                     </section>
-                    <button>Ver todos</button>
                 </div>
+                <hr>
             </article>
             <article id="kimikal" class="kimikal">
-                <h2>Kimikal</h2>
+                <div class="titulo-y-ver-todo">
+                    <h2>Kimikal</h2>
+                    <button><a href="HTML/productos.html">Ver todo <i class="bi bi-arrow-right"></i></a> </button>
+                </div>
                 <div class="productos">
                     <section>
-
-                        <img src="imagenes/Kimikal/frisa.webp" alt="Campera Frisa">
+                        <a href="HTML/campera-frisa.html"><img src="imagenes/Kimikal/frisa.webp"
+                                alt="Campera Frisa"></a>
                         <h5>Campera Frisa</h5>
                         <p>$10.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/campera-frisa.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Kimikal/broken.jpg" alt="Buzo Broken">
+                        <a href="HTML/buzo-brokne.html"><img src="imagenes/Kimikal/broken.jpg" alt="Buzo Broken"></a>
                         <h5>Buzo Broken</h5>
                         <p>$11.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-brokne.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Kimikal/preston.jpg" alt="Buzo Preston">
+                        <a href="HTML/buzo-preston.html"><img src="imagenes/Kimikal/preston.jpg" alt="Buzo Preston"></a>
                         <h5>Buzo Preston</h5>
                         <p>$11.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-preston.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Kimikal/ny.jpg" alt="Buzo New York">
+                        <a href="HTML/buzo-new-york.html"><img src="imagenes/Kimikal/ny.jpg" alt="Buzo New York"></a>
                         <h5>Buzo New York</h5>
                         <p>$12.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/buzo-new-york.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Kimikal/peluche.jpg" alt="Campera Peluche">
+                        <a href="HTML/campera-peluche.html"><img src="imagenes/Kimikal/peluche.jpg"
+                                alt="Campera Peluche"></a>
                         <h5>Campera Peluche</h5>
                         <p>$15.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/campera-peluche.html">Ver producto</a>
                     </section>
                     <section>
-
-                        <img src="imagenes/Kimikal/cuelloredondo.jpg" alt="Buzo Redondo">
+                        <a href="HTML/cuello-redondo.html"><img src="imagenes/Kimikal/cuelloredondo.jpg"
+                                alt="Buzo Redondo"></a>
                         <h5>Buzo Redondo</h5>
                         <p>$11.990</p>
-                        <a href="">Ver producto</a>
+                        <a href="HTML/cuello-redondo.html">Ver producto</a>
                     </section>
-                    <button>Ver todos</button>
                 </div>
+                <hr>
             </article>
         </main>
+        <section id="form">
+            <a href="#"><img src="Imagenes/Pagina/Logo.png" class="Logo" alt="Formulario de contacto"></a>
+            <div class="quienes-somos">
+                <a href="#">
+                    <p>Quienes somos</p>
+                </a>
+                <a href="#">
+                    <p>Politicas de privacidad</p>
+                </a>
+                <a href="#">
+                    <p>Programa de fidelidad</p>
+                </a>
+                <a href="#">
+                    <p>Nuestras tiendas</p>
+                </a>
+                <a href="#">
+                    <p>Quiero ser franquiciado</p>
+                </a>
+                <a href="#">
+                    <p>Anuncia aqui</p>
+                </a>
+            </div>
+            <div class="container-formulario" id="container-formulario">
+                <h2 id="formularioTitulo"><strong> Habla con nosotros:</strong></h2>
+                <form class="row g-3 needs-validation" name="formulario" id="formulario" action="mail.php" method="post"
+                    novalidate>
+                    <label for="validationCustom01" class="form-label" id="nameForm">Nombre:</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Ej: Juan" name="nombre"
+                        maxlength="50" value="" required>
+                    <div class="valid-feedback" id="validForm">
+                        Dato valido
+                    </div>
+                    <div class="invalid-feedback" id="invalidForm">
+                        Por favor escriba su nombre
+                    </div>
+                    <label for="validationCustom02" class="form-label" id="emailForm">Correo
+                        electronico:</label>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="ejemplo@gmail.com"
+                        name="email" value="" required>
+                    <div class="valid-feedback" id="validForm1">
+                        Dato valido
+                    </div>
+                    <div class="invalid-feedback" id="invalidForm1">
+                        Por favor escriba su correo electronico
+                    </div>
+                    <label for="mensaje" class="form-label" id="mensajeForm">Mensaje:</label>
+                    <textarea name="mensaje" class="form-control" id="validationCustom4" maxlength="300" cols="30"
+                        rows="2" required></textarea>
+                    <div class="valid-feedback" id="validForm3">
+                        Dato valido
+                    </div>
+                    <div class="invalid-feedback" id="invalidForm3">
+                        Por favor escriba su mensaje
+                    </div>
+                    <div class="col-12" id="btn-enviar">
+                        <button class="btn-enviar" type="submit" id="sendForm" name="btnSend">Enviar
+                            formulario</button>
+                    </div>
+            </div>
+            </form>
+        </section>
     </div>
-    <footer></footer>
+    <footer id="footer">
+        <p class="sitio" id="sitio">Sitio desarrollado con:</p>
+        <img src="Imagenes/pagina/html.png" alt="Logo HTML" class="imagen-footer">
+        <img src="Imagenes/pagina/css.png" alt="Logo CSS" class="imagen-footer">
+        <img src="Imagenes/pagina/js.png" alt="Logo JavaScript" class="imagen-footer">
+        <img src="Imagenes/pagina/bootstrap.png" alt="Logo Boostrap" class="imagen-footer"><br>
+        <a href="https://github.com/YacoAngeleri" class="icono-footer" id="icono-footer-1"><i class="bi bi-github">
+                GitHub</i></a>
+        <a href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a" class="icono-footer" id="icono-footer-2"><i
+                class="bi bi-linkedin"> Linkedin</i></a>
+        <a href="mailto:yacoang@gmail.com" class="icono-footer" id="icono-footer-3"><i class="bi bi-envelope-fill">
+                E-mail</i></a>
+        <p class="derechos" id="derechos">© July 2023 made by <a class="nombre" id="nombre"
+                href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a"> Tomas Yaco Angeleri.</a> All
+            Rights Reserved.</p>
+    </footer>
+    <button class="back-to-top hidden" data-bs-toggle="tooltip" data-bs-title="Volver al inicio" id="btn-back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
 </body>
+<script>
+    //Validacion del formulario con Boomstrap
+    (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 <script src="JS/darkmode.js"></script>
+<script src="JS/back-to-top-btn.js"></script>
 
 </html>

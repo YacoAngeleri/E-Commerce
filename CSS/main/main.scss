@@ -1,23 +1,52 @@
-article{
-    
+article {
+    .titulo-y-ver-todo {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+
+        button {
+            background-color: transparent;
+            border: none;
+            margin-right: 3em;
+        }
+    }
+
     .productos {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         align-content: center;
-        section{
-            margin: 1em;
-            
-        img {
-            width: 10em;
+
+        section {
+            margin: 0.5em;
+
+            img {
+                width: 9em;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .precio{
+                display: flex;
+                color: green;
+                .precio1{
+                    margin-right: 0.5em;
+                    text-decoration:line-through;
+                    color: red;
+                }
+            }
+
+            img:hover {
+                -webkit-transform: scale(1.07);
+                transform: scale(1.07)
+            }
         }
-        p{
-            margin: 0;
-        }
-        a{
-            font-weight: bold;
-            text-decoration: none;
-        }
-    }
     }
 }

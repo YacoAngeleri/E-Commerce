@@ -1,5 +1,7 @@
+
 header {
     padding: 1em 1em 0 1em;
+    width: 100%;
 
     a {
         width: 15%;
@@ -17,19 +19,47 @@ header {
     .menu {
         display: flex;
         margin: auto;
-        width: 100%;
+        width: 85%;
         justify-content: space-around;
         list-style-type: none;
         
     }
     form{
         margin-left: 1em;
-        #search{
+        #input-search{
+            padding: 0.4em 4em;
+        }
+        #btn-search{
             border-radius: 0.5em;
+            padding: 0.4em 1.2em;
         }
     }
-    .btn-login{
-        margin-left: 1em;
-        border-radius: 0.5em;
+    
+    .banner{
+        background-image: url(../../imagenes/Pagina/banner.jpg);
+        background-size: cover;
+        padding: 4em;
+        h2{
+            font-weight: bold;
+            background-color: lightgray;
+            text-align: center;
+            width: 30%;
+            text-decoration: underline;
+            margin-top: 0.8em;
+            margin-bottom: 0.8em;
+        }
+        p{
+            font-size: 1.2em;
+            background-color: lightgray;
+            text-align: center;
+            width: 45%;
+            color: black;
+            font-weight: bold;
+            margin-top: 0.8em;
+            margin-bottom: 1em;
+        }
+        button{
+            border-radius: 0.5em;
+        }
     }
 }

@@ -1,0 +1,34 @@
+/*Footer*/
+footer {
+    text-align: center;
+    background-color: rgb(173, 171, 171);
+    color: rgb(68, 68, 248);
+  }
+  .sitio {
+    font-size: 0.9em;
+    padding-top: 0.7em;
+    margin-bottom: 0.7em;
+    color: darkblue;
+  }
+  .imagen-footer {
+    width: 2%;
+    margin: auto;
+    margin-bottom: 0.5em;
+  }
+  .icono-footer {
+    margin-left: 0.5em;
+    color: blue;
+  }
+  .icono-footer:hover {
+    opacity: 0.8;
+    font-weight: 600;
+  }
+  .derechos {
+    margin-top: 0.7em;
+    padding-bottom: 1em;
+    color: black;
+  }
+  .nombre:hover {
+    opacity: 0.8;
+    font-weight: 600;
+  }

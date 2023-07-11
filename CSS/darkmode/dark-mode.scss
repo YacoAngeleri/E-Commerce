@@ -1,10 +1,11 @@
     //Boton dark mode
     .container-btn-mode {
         display: inline-block;
-        margin: auto;
-        justify-content: right;
+        align-self: center;
+        text-align: right;
         cursor: pointer;
         z-index: 2;
+        width: 15%;
         font-size: 0;
     }
 

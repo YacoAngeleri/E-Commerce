@@ -1,14 +1,25 @@
+article .titulo-y-ver-todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+article .titulo-y-ver-todo button {
+  background-color: transparent;
+  border: none;
+  margin-right: 3em;
+}
 article .productos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center;
 }
 article .productos section {
-  margin: 1em;
+  margin: 0.5em;
 }
 article .productos section img {
-  width: 10em;
+  width: 9em;
 }
 article .productos section p {
   margin: 0;
@@ -17,5 +28,15 @@ article .productos section a {
   font-weight: bold;
   text-decoration: none;
 }
-
-/*# sourceMappingURL=main.css.map */
+article .productos section .precio {
+  display: flex;
+  color: green;
+}
+article .productos section .precio .precio1 {
+  margin-right: 0.5em;
+  text-decoration: line-through;
+  color: red;
+}
+article .productos section img:hover {
+  transform: scale(1.07);
+}/*# sourceMappingURL=main.css.map */

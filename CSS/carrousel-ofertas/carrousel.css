@@ -1,0 +1,61 @@
+.container-carousel {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+.container-carousel #carousel {
+  width: 25%;
+}
+.container-carousel #carousel h3 {
+  text-align: center;
+}
+.container-carousel #carousel .carousel-item {
+  background-color: transparent;
+}
+.container-carousel #carousel h6, .container-carousel #carousel p {
+  color: black;
+  font-weight: bold;
+}
+.container-carousel .informacion-descuentos {
+  display: flex;
+  flex-direction: column;
+  align-self: normal;
+  text-align: center;
+  margin-top: 3.5em;
+}
+.container-carousel .informacion-descuentos img {
+  width: 1.5em;
+}
+.container-carousel .informacion-descuentos .precio {
+  display: flex;
+  color: green;
+}
+.container-carousel .informacion-descuentos .precio .precio1 {
+  margin-right: 0.5em;
+  text-decoration: line-through;
+  color: red;
+}
+.container-carousel .informacion-descuentos h2, .container-carousel .informacion-descuentos h4, .container-carousel .informacion-descuentos .talles {
+  text-align: left;
+}
+.container-carousel .informacion-descuentos .comprar {
+  display: flex;
+  justify-content: space-around;
+}
+.container-carousel .informacion-descuentos h5, .container-carousel .informacion-descuentos h6, .container-carousel .informacion-descuentos p {
+  margin: 0.6em 0;
+  color: black;
+}
+.container-carousel #carousel:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.container-carousel #carousel-producto {
+  width: 100%;
+  margin-right: 1em;
+}
+.container-carousel .btn-group {
+  margin: 1em 0;
+}
+
+/*# sourceMappingURL=carrousel.css.map */

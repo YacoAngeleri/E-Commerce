@@ -1,5 +1,6 @@
 header {
   padding: 1em 1em 0 1em;
+  width: 100%;
 }
 header a {
   width: 15%;
@@ -8,25 +9,55 @@ header a img {
   width: 80%;
 }
 header a img:hover {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 header .menu {
   display: flex;
   margin: auto;
-  width: 100%;
+  width: 85%;
   justify-content: space-around;
   list-style-type: none;
 }
 header form {
   margin-left: 1em;
 }
-header form #search {
+header form #input-search {
+  padding: 0.4em 4em;
+}
+header form #btn-search {
   border-radius: 0.5em;
+  padding: 0.4em 1.2em;
 }
 header .btn-login {
-  margin-left: 1em;
+  margin: 0 1em;
+  padding: 0.4em 3em;
+  background-color: white;
   border-radius: 0.5em;
 }
-
-/*# sourceMappingURL=header.css.map */
+header .banner {
+  background-image: url(../../imagenes/Pagina/banner.jpg);
+  background-size: cover;
+  padding: 4em;
+}
+header .banner h2 {
+  font-weight: bold;
+  background-color: lightgray;
+  text-align: center;
+  width: 30%;
+  text-decoration: underline;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+header .banner p {
+  font-size: 1.2em;
+  background-color: lightgray;
+  text-align: center;
+  width: 45%;
+  color: black;
+  font-weight: bold;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+header .banner button {
+  border-radius: 0.5em;
+}/*# sourceMappingURL=header.css.map */
