@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/btn-login/login.css">
     <link rel="stylesheet" href="CSS/btn-search/search.css">
     <link rel="stylesheet" href="CSS/responsive/responsive.css">
+    <link rel="stylesheet" href="CSS/agregar-producto/agregar.css">
     <link rel="stylesheet" href="CSS/carrousel-ofertas/carrousel.css">
     <link rel="stylesheet" href="CSS/darkmode/dark-mode.css">
     <link rel="stylesheet" href="CSS/main/main.css">
@@ -77,11 +78,6 @@
                                 <i class="bi bi-search" id="isearch"></i>
                             </div>
                         </div>
-                        <!-- <form class="d-flex" role="search">
-                            <input class="form-control me-2" id="input-search" type="search" placeholder="¿Que buscas?"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" id="btn-search" type="submit">Search</button>
-                        </form> -->
                         <button class="btn-login"><a href="HTML/login.html">Login</a></button>
                         <div class="container-btn-mode">
                             <div id="id-sun" class="btn-mode sun active">
@@ -97,15 +93,18 @@
 
         </nav>
         <div class="banner">
-            <h2 id="promo">Julio Promocional</h2>
-            <p id="promo1">Productos seleccionados con hasta 35% de descuento</p>
-            <button id="promo2"><a href="HTML/descuentos.html" >Ver descuentos</a></button>
+            <h2 id="promo"><strong>JULIO PROMOCIONAL</strong></h2>
+            <p id="promo1">Productos seleccionados hasta 35% off</p>
+            <div class="box">
+                <span class="borderLine"></span>
+                <a href="HTML/descuentos.html" class="btn-desc"><button id="promo2">Ver descuentos</button></a>
+        </div>
         </div>
     </header>
     <div class="container">
         <div class="container-carousel">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                <h3>Ofertas especiales</h3>
+                <h3><strong>Ofertas especiales</strong></h3>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -116,25 +115,22 @@
                     <div class="carousel-item active">
                         <a href="HTML/buzo-bujari.html"> <img src="imagenes/Ofertas/Buzo-Bujari.jpg"
                                 class="d-block w-100" alt="buzo"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h6>35% off en Efectivo</h6>
-                            <p>o 12 coutas sin interes con Santander Rio</p>
+                        <div class="carousel-caption">
+                            <h6>35% off y 6 coutas sin interes</h6>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <a href="HTML/buzo-nebraska.html"><img src="imagenes/Ofertas/Buzo-Nebraska.jpg"
                                 class="d-block w-100" alt="Campera"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h6>30% off en Efectivo</h6>
-                            <p>o 12 coutas sin interes con Santander Rio</p>
+                        <div class="carousel-caption">
+                            <h6>30% off y 6 coutas sin interes</h6>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <a href="HTML/buzo-boxy.html"><img src="imagenes/Ofertas/boxy.webp" class="d-block w-100"
                                 alt="buzo"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h6>30% off en Efectivo</h6>
-                            <p>o 12 coutas sin interes con Santander Rio</p>
+                        <div class="carousel-caption">
+                            <h6>30% off y 6 coutas sin interes</h6>
                         </div>
                     </div>
                 </div>
@@ -161,7 +157,7 @@
         <main>
             <article id="dexter-moov" class="dexter-moov">
                 <div class="titulo-y-ver-todo">
-                    <h2>Dexter & Moov</h2>
+                    <h2><strong>Dexter & Moov</strong></h2>
                     <button><a href="HTML/productos.html">Ver todo <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
                 <div class="productos">
@@ -212,7 +208,7 @@
             <hr>
             <article id="rukawe" class="rukawe">
                 <div class="titulo-y-ver-todo">
-                    <h2>Rukawe</h2>
+                    <h2><strong>Rukawe</strong></h2>
                     <button><a href="HTML/productos.html">Ver todo <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
                 <div class="productos">
@@ -261,7 +257,7 @@
             </article>
             <article id="kimikal" class="kimikal">
                 <div class="titulo-y-ver-todo">
-                    <h2>Kimikal</h2>
+                    <h2><strong>Kimikal</strong></h2>
                     <button><a href="HTML/productos.html">Ver todo <i class="bi bi-arrow-right"></i></a> </button>
                 </div>
                 <div class="productos">

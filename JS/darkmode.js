@@ -6,7 +6,7 @@ let colorText1 = "black"
 
 document.getElementById('id-moon').onclick = function(){
     document.getElementById('id-sun').style.background = "darkgray";
-    document.getElementById('id-sun').style.color = "yellow";
+    document.getElementById('id-sun').style.color = "black";
     document.getElementById('id-sun').classList.remove('active');
     this.classList.add('active');
     document.getElementById('body').style.background = "radial-gradient(rgb(78, 78, 78), rgb(65, 64, 64), rgb(51, 51, 51), rgb(29, 29, 29), rgb(17, 17, 17), rgb(8, 8, 8), rgb(0, 0, 0))";

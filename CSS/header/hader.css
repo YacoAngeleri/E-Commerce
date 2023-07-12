@@ -47,7 +47,7 @@ header .banner {
 }
 header .banner .box {
   position: relative;
-  width: 10em;
+  width: 12em;
   height: 2.5em;
   background-color: darkgray;
   border-radius: 8px;
@@ -58,7 +58,7 @@ header .banner .box::before {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 10em;
+  width: 12em;
   height: 10em;
   background: linear-gradient(0deg, transparent, transparent, darkblue, darkblue, darkblue);
   z-index: 1;
@@ -70,7 +70,7 @@ header .banner .box::after {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 10em;
+  width: 12em;
   height: 10em;
   background: linear-gradient(0deg, transparent, transparent, darkblue, darkblue, darkblue);
   z-index: 1;
@@ -88,7 +88,7 @@ header .banner .borderLine::before {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 10em;
+  width: 12em;
   height: 10em;
   background: linear-gradient(0deg, transparent, transparent, purple, purple, purple);
   z-index: 1;
@@ -101,7 +101,7 @@ header .banner .borderLine::after {
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 10em;
+  width: 12em;
   height: 15em;
   background: linear-gradient(0deg, transparent, transparent, purple, purple, purple);
   z-index: 1;
@@ -157,4 +157,4 @@ header .banner a #promo2:hover {
   background-color: blue;
 }
 
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=hader.css.map */

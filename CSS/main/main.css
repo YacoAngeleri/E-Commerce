@@ -38,5 +38,8 @@ article .productos section .precio .precio1 {
   color: red;
 }
 article .productos section img:hover {
-  transform: scale(1.07);
-}/*# sourceMappingURL=main.css.map */
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+/*# sourceMappingURL=main.css.map */

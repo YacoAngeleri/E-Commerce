@@ -3,17 +3,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  header .menu #nav-dropdown {
-    margin-left: 43%;
-    margin-bottom: 2em;
-  }
-  header .menu li {
-    width: 100%;
     text-align: center;
+    align-content: center;
+  }
+  header .menu .nav-item {
+    padding-bottom: 2em;
   }
   header .menu .search {
     margin-top: 0.5em;
+    margin-bottom: 2em;
+    padding-bottom: 3em;
     text-align: center;
     right: 35%;
   }
@@ -23,7 +22,7 @@
   }
   header .menu .btn-login {
     margin: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
   }
   header .menu .container-btn-mode {
     text-align: center;
@@ -33,33 +32,229 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  header .menu #nav-dropdown {
-    margin-left: 42%;
-    margin-bottom: 2em;
+  header a {
+    width: 20%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .btn-mode {
+    width: 5vw;
+    height: 3vw;
+  }
+  header .btn-mode i {
+    font-size: 1.4vw;
+    line-height: 2.5vw;
+  }
+  header .banner #promo {
+    width: 70%;
+  }
+  header .banner #promo1 {
+    width: 70%;
+  }
+  .container .container-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #form {
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media screen and (max-width: 915px) {
-  header .menu #nav-dropdown {
-    margin-left: 41%;
-    margin-bottom: 2em;
+  header a {
+    width: 23%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode {
+    width: 50%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 5.5vw;
+    height: 3.8vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 1.6vw;
+    line-height: 3vw;
+  }
+  .container .container-carousel #carousel {
+    width: 32%;
+  }
+  footer .imagen-footer {
+    width: 3%;
   }
 }
 @media screen and (max-width: 835px) {
-  header .menu #nav-dropdown {
-    margin-left: 40%;
-    margin-bottom: 2em;
+  header a {
+    width: 26%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 6vw;
+    height: 4.1vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 1.8vw;
+    line-height: 3.3vw;
+  }
+  .container .container-carousel #carousel {
+    width: 45%;
   }
 }
 @media screen and (max-width: 750px) {
-  header .menu #nav-dropdown {
-    margin-left: 39%;
-    margin-bottom: 2em;
+  header a {
+    width: 28%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 6.5vw;
+    height: 4.2vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 2vw;
+    line-height: 3, 5vw;
+  }
+  header .banner #promo1 {
+    width: 80%;
+  }
+  footer .imagen-footer {
+    width: 4%;
   }
 }
 @media screen and (max-width: 630px) {
-  header .menu #nav-dropdown {
-    margin-left: 38%;
-    margin-bottom: 2em;
+  header a {
+    width: 30%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 7.5vw;
+    height: 5.2vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+  }
+  header .banner #promo1 {
+    width: 90%;
+  }
+  footer .imagen-footer {
+    width: 4.5%;
+  }
+}
+@media screen and (max-width: 560px) {
+  header a {
+    width: 32%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 8vw;
+    height: 5.5vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 2.7vw;
+    line-height: 4.8vw;
+  }
+  header .banner #promo {
+    width: 80%;
+  }
+  header .banner #promo1 {
+    width: 100%;
+  }
+  .container .container-carousel #carousel {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 495px) {
+  header a {
+    width: 35%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 8.5vw;
+    height: 6.1vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 3vw;
+    line-height: 5.3vw;
+  }
+  header .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .banner #promo {
+    width: 90%;
+  }
+  footer .imagen-footer {
+    width: 5%;
+  }
+}
+@media screen and (max-width: 430px) {
+  header a {
+    width: 38%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 9.2vw;
+    height: 6.5vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 3.3vw;
+    line-height: 5.5vw;
+  }
+  header .banner #promo {
+    width: 95%;
+  }
+  .container .container-carousel #carousel {
+    width: 60%;
+  }
+  footer .imagen-footer {
+    width: 5.5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  header a {
+    width: 40%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .container-btn-mode .btn-mode {
+    width: 10vw;
+    height: 7.2vw;
+  }
+  header .container-btn-mode .btn-mode i {
+    font-size: 3.6vw;
+    line-height: 6.4vw;
+  }
+  header .banner #promo {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .container .container-carousel #carousel {
+    width: 70%;
+  }
+  .container .titulo-y-ver-todo {
+    flex-direction: column;
+    text-align: left;
+  }
+  footer .imagen-footer {
+    width: 6%;
   }
 }
 
