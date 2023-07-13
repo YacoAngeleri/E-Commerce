@@ -1,0 +1,15 @@
+article section {
+  background-color: darkgray;
+  border-radius: 0.5em;
+  padding: 0.8em;
+  margin: 0.5em;
+  color: black;
+}
+article h1, article h4 {
+  text-align: center;
+}
+article p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=nosotros.css.map */

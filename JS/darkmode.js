@@ -12,6 +12,8 @@ document.getElementById('id-moon').onclick = function(){
     document.getElementById('body').style.background = "radial-gradient(rgb(78, 78, 78), rgb(65, 64, 64), rgb(51, 51, 51), rgb(29, 29, 29), rgb(17, 17, 17), rgb(8, 8, 8), rgb(0, 0, 0))";
     document.getElementById('body').style.color = colorText;
     document.getElementById('form').style.background = color;
+    document.getElementById('sec-quienes-somos').style.background = colorText1;
+    document.getElementById('sec-politicas').style.background = colorText1;
     document.getElementById('dropdown-menu').style.background = color;
     document.getElementById('dropdown-item0').style.color = colorText;
     document.getElementById('dropdown-item1').style.color = colorText;
@@ -31,6 +33,7 @@ document.getElementById('id-moon').onclick = function(){
     document.getElementById('icono-footer-3').style.color = "rgb(123, 123, 233)";
     document.getElementById('nombre').style.color = "rgb(123, 123, 233)";
     document.getElementById('derechos').style.color = colorText;
+    
 }
 
 document.getElementById('id-sun').onclick = function(){
@@ -40,6 +43,8 @@ document.getElementById('id-sun').onclick = function(){
     document.getElementById('body').style.background = "radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(253, 253, 253), rgb(247, 247, 247), rgb(241, 241, 241), rgb(219, 217, 217), rgb(209, 208, 208), rgb(196, 195, 195), rgb(185, 185, 185))";
     document.getElementById('body').style.color = colorText1;
     document.getElementById('form').style.background = colorText;
+    document.getElementById('sec-quienes-somos').style.background = "darkgray";
+    document.getElementById('sec-politicas').style.background = "darkgray";
     document.getElementById('dropdown-menu').style.background = color1;
     document.getElementById('dropdown-item0').style.color = colorText1;
     document.getElementById('dropdown-item1').style.color = colorText1;
