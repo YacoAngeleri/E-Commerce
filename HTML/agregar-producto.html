@@ -87,26 +87,42 @@
     </header>
     <hr>
     <div class="container">
-        <div class="box">
+        <div class="box1">
             <span class="borderLine"></span>
-            <form id="form">
+            <form id="form" action="producto-agregado.html" class="form">
                 <h2><strong>Agregar producto</strong></h2>
                 <div class="inputBox" >
-                    <span><strong>Nombre del producto</strong></span>
-                    <input type="text" required>
+                    <label class="input-label" for="url"><strong>Imagen del producto:</strong></label >
+                    <input type="url" name="url" id="url" class="input" data-tipo="imagen" required>
                     <i></i>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="inputBox" >
+                    <label class="input-label" for="categoria"><strong>Categoria del producto:</strong></label >
+                    <input type="list" name="categoria" id="categoria" class="input"  required list="category" data-tipo="categoria" pattern="^.{6,13}$">
+                    <datalist id="category"> <option>Dexter y Moov</option> <option>Rukawe</option> <option>Kimikal</option> </datalist>
+                    <i></i>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="inputBox" >
+                    <label class="input-label" for="name"><strong>Nombre del producto:</strong></label >
+                    <input type="text" name="name" id="name" class="input" data-tipo="nombre" required>
+                    <i></i>
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="inputBox">
-                    <span><strong>Precio</strong></span>
-                    <input type="number" required>
+                    <label class="input-label" for="precio"><strong>Precio del producto:</strong></label >
+                    <input type="number" name="precio" id="precio" class="input" data-tipo="precio" required>
                     <i></i>
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="inputBox">
-                    <span><strong>Descripcion</strong></span>
-                    <input type="text" required>
+                    <label class="input-label" for="descripcion"><strong>Descripción:</strong></label >
+                    <input type="text" name="descripcion" id="descripcion" class="input" data-tipo="descripcion" pattern="^.{2,200}$" required>
                     <i></i>
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
-                <a href="producto-agregado.html" type="submit" class="submit">Agregar producto</a>
+                <button type="submit" class="submit">Agregar producto</button>
             </form>
         </div>
         <hr>
@@ -201,5 +217,6 @@
     </script>
 <script src="../JS/darkmode.js"></script>
 <script src="../JS/back-to-top-btn.js"></script>
+<script src="../JS/validacionFormulario.js"></script>
 
 </html>
