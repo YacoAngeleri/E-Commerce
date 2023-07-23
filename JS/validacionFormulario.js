@@ -44,10 +44,6 @@ const mensajesDeError = {
     valueMissing: "El campo imagen no puede estar vacío",
     typeMismatch: "La imagen no es válida",
   },
-  categoria: {
-    valueMissing: "Seleccione una categoria valida: Dexter y Moov, Rukawe o Kimikal",
-    patternMismatch: "Seleccione una categoria valida: Dexter y Moov, Rukawe o Kimikal",
-  },
   precio: {
     valueMissing: "El campo precio no puede estar vacío",
     typeMismatch: "El precio no es válido",

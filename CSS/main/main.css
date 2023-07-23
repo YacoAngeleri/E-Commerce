@@ -28,6 +28,32 @@ article .productos section a {
   font-weight: bold;
   text-decoration: none;
 }
+article .productos section a:hover {
+  opacity: 0.8;
+  color: darkblue;
+}
+article .productos section .btn-editar {
+  border: none;
+  background-color: transparent;
+  color: green;
+  font-weight: bold;
+  padding-left: 0;
+}
+article .productos section .btn-editar:hover {
+  opacity: 0.8;
+  color: darkgreen;
+}
+article .productos section .btn-eliminar {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+  padding-left: 0;
+}
+article .productos section .btn-eliminar:hover {
+  opacity: 0.8;
+  color: darkred;
+}
 article .productos section .precio {
   display: flex;
   color: green;

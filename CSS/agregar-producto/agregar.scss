@@ -156,7 +156,7 @@
     .box form .inputBox input:focus~span {
         color: #fff;
         font-size: 0.75em;
-        transform: translateX(34px);
+        transform: translateX(1px);
     }
 
     .box form .inputBox i {
@@ -221,7 +221,7 @@
     .box1 {
         position: relative;
         width: 20em;
-        height: 40em;
+        height: 43em;
         background-color: darkgray;
         border-radius: 8px;
         overflow: hidden;
@@ -366,7 +366,7 @@
     .box1 form .inputBox input:focus~span {
         color: #fff;
         font-size: 0.75em;
-        transform: translateX(34px);
+        transform: translateX(1px);
     }
 
     .box1 form .inputBox i {

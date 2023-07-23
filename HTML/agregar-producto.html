@@ -47,11 +47,13 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" id="dropdown-item1" href="productos.html">Todos los productos</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item1" href="productos.html">Todos los
+                                        productos</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" id="dropdown-item2" href="descuentos.html">Descuentos</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item2" href="descuentos.html">Descuentos</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -59,7 +61,8 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" id="dropdown-item4" href="eliminar-producto.html">Eliminar producto</a></li>
+                                <li><a class="dropdown-item" id="dropdown-item4" href="eliminar-producto.html">Eliminar
+                                        producto</a></li>
                             </ul>
                         </li>
                         <br>
@@ -89,36 +92,30 @@
     <div class="container">
         <div class="box1">
             <span class="borderLine"></span>
-            <form id="form" action="producto-agregado.html" class="form">
+            <form id="form" action="producto-agregado.html" class="form" data-form>
                 <h2><strong>Agregar producto</strong></h2>
-                <div class="inputBox" >
-                    <label class="input-label" for="url"><strong>Imagen del producto:</strong></label >
-                    <input type="url" name="url" id="url" class="input" data-tipo="imagen" required>
-                    <i></i>
-                    <span class="input-message-error">Este campo no es valido</span>
-                </div>
-                <div class="inputBox" >
-                    <label class="input-label" for="categoria"><strong>Categoria del producto:</strong></label >
-                    <input type="list" name="categoria" id="categoria" class="input"  required list="category" data-tipo="categoria" pattern="^.{6,13}$">
-                    <datalist id="category"> <option>Dexter y Moov</option> <option>Rukawe</option> <option>Kimikal</option> </datalist>
-                    <i></i>
-                    <span class="input-message-error">Este campo no es valido</span>
-                </div>
-                <div class="inputBox" >
-                    <label class="input-label" for="name"><strong>Nombre del producto:</strong></label >
-                    <input type="text" name="name" id="name" class="input" data-tipo="nombre" required>
+                <div class="inputBox">
+                    <label class="input-label" for="url"><strong>Imagen del producto:</strong></label>
+                    <input type="url" name="url" id="url" class="input" data-tipo="imagen" required data-url>
                     <i></i>
                     <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="inputBox">
-                    <label class="input-label" for="precio"><strong>Precio del producto:</strong></label >
-                    <input type="number" name="precio" id="precio" class="input" data-tipo="precio" required>
+                    <label class="input-label" for="name"><strong>Nombre del producto:</strong></label>
+                    <input type="text" name="name" id="name" class="input" data-tipo="nombre" required data-name>
                     <i></i>
                     <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="inputBox">
-                    <label class="input-label" for="descripcion"><strong>Descripción:</strong></label >
-                    <input type="text" name="descripcion" id="descripcion" class="input" data-tipo="descripcion" pattern="^.{2,200}$" required>
+                    <label class="input-label" for="precio"><strong>Precio del producto:</strong></label>
+                    <input type="number" name="precio" id="precio" class="input" data-tipo="precio" required data-price>
+                    <i></i>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="inputBox">
+                    <label class="input-label" for="descripcion"><strong>Descripción:</strong></label>
+                    <input type="text" name="descripcion" id="descripcion" class="input" data-tipo="descripcion"
+                        pattern="^.{2,200}$" required data-description>
                     <i></i>
                     <span class="input-message-error">Este campo no es valido</span>
                 </div>
@@ -216,6 +213,10 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 <script src="../JS/darkmode.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../controllers/crear-productos-controller.js"></script>
 <script src="../JS/back-to-top-btn.js"></script>
 <script src="../JS/validacionFormulario.js"></script>
 

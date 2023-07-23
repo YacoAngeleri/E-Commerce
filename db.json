@@ -1,0 +1,214 @@
+{
+  "producto": [
+    {
+      "name": "Campera Puma",
+      "imagen": "../imagenes/Dexter-Moov/pumasport-1.jpg",
+      "price": "$19.990",
+      "id": 1,
+      "description": ""
+    },
+    {
+      "name": "Campera Adidas",
+      "imagen": "../imagenes/Dexter-Moov/adidasred-1.jpg",
+      "price": "$24.990",
+      "id": 2,
+      "description": ""
+    },
+    {
+      "name": "Campera Ferrari",
+      "imagen": "../imagenes/Dexter-Moov/ferrari-1.jpg",
+      "price": "$26.990",
+      "id": 3,
+      "description": ""
+    },
+    {
+      "name": "Remera M City",
+      "imagen": "../imagenes/Dexter-Moov/city-1.jpg",
+      "price": "$12.990",
+      "id": 4,
+      "description": ""
+    },
+    {
+      "name": "Buzo Vans",
+      "imagen": "../imagenes/Dexter-Moov/vans-1.jpg",
+      "price": "$18.990",
+      "id": 5,
+      "description": ""
+    },
+    {
+      "name": "Buzo Nike",
+      "imagen": "../imagenes/Dexter-Moov/nikesport-1.jpg",
+      "price": "$19.990",
+      "id": 6,
+      "description": ""
+    },
+    {
+      "name": "Campera Nike",
+      "imagen": "../imagenes/Dexter-Moov/nikeessentials-1.jpg",
+      "price": "$21.990",
+      "id": 7,
+      "description": ""
+    },
+    {
+      "name": "Remera Puma",
+      "imagen": "../imagenes/Dexter-Moov/puma-1.jpg",
+      "price": "$12.990",
+      "id": 8,
+      "description": ""
+    },
+    {
+      "name": "Remera River",
+      "imagen": "../imagenes/Dexter-Moov/river-1.jpg",
+      "price": "$18.990",
+      "id": 9,
+      "description": ""
+    },
+    {
+      "name": "Campera Urbo",
+      "imagen": "../imagenes/Dexter-Moov/urbo-1.jpg",
+      "price": "$19.990",
+      "id": 10,
+      "description": ""
+    },
+    {
+      "name": "Buzo Gramad",
+      "imagen": "../imagenes/Rukawe/Buzo-Gramado-1.jpg",
+      "price": "$12.990",
+      "id": 11,
+      "description": ""
+    },
+    {
+      "name": "Buzo Morro",
+      "imagen": "../imagenes/Rukawe/buzo-morro-1.jpg",
+      "price": "$12.990",
+      "id": 12,
+      "description": ""
+    },
+    {
+      "name": "Buzo Careiro",
+      "imagen": "../imagenes/Rukawe/Buzo-Careiro2-1.jpg",
+      "price": "$11.990",
+      "id": 13,
+      "description": ""
+    },
+    {
+      "name": "Babucha Mosco",
+      "imagen": "../imagenes/Rukawe/Babucha-Mosconi-1.jpg",
+      "price": "$11.990'",
+      "id": 14,
+      "description": ""
+    },
+    {
+      "name": "Jean Genk",
+      "imagen": "../imagenes/Rukawe/Jean-Genk-1.jpg",
+      "price": "$15.990",
+      "id": 15,
+      "description": ""
+    },
+    {
+      "name": "Camisa Bonfim",
+      "imagen": "../imagenes/Rukawe/Camisa-Bonfim-1.jpg",
+      "price": "$10.990",
+      "id": 16,
+      "description": ""
+    },
+    {
+      "name": "Buzo Bujari",
+      "imagen": "../imagenes/Rukawe/Buzo-Bujari-1.jpg",
+      "price": "$16.990",
+      "id": 17,
+      "description": ""
+    },
+    {
+      "name": "Camisaco Afra",
+      "imagen": "../imagenes/Rukawe/Camisaco-Afranio-1.jpg",
+      "price": "$16.990",
+      "id": 18,
+      "description": ""
+    },
+    {
+      "name": "Buzo Nebraska",
+      "imagen": "../imagenes/Rukawe/Buzo-Nebraska-1.jpg",
+      "price": "$15.990",
+      "id": 19,
+      "description": ""
+    },
+    {
+      "name": "Campera Cerke",
+      "imagen": "../imagenes/Rukawe/Campera-Cerqueira-1.jpg",
+      "price": "$15.990",
+      "id": 20,
+      "description": ""
+    },
+    {
+      "name": "Campera Frisa",
+      "imagen": "../imagenes/Kimikal/frisa.webp",
+      "price": "$10.990",
+      "id": 21,
+      "description": ""
+    },
+    {
+      "name": "Buzo Broken",
+      "imagen": "../imagenes/Kimikal/broken.jpg",
+      "price": "$11.990",
+      "id": 22,
+      "description": ""
+    },
+    {
+      "name": "Buzo Preston",
+      "imagen": "../imagenes/Kimikal/preston.jpg",
+      "price": "$11.990",
+      "id": 23,
+      "description": ""
+    },
+    {
+      "name": "Buzo New York",
+      "imagen": "../imagenes/Kimikal/ny.jpg",
+      "price": "$12.990",
+      "id": 24,
+      "description": ""
+    },
+    {
+      "name": "Campera Peluche",
+      "imagen": "../imagenes/Kimikal/peluche.jpg",
+      "price": "$15.990",
+      "id": 25,
+      "description": ""
+    },
+    {
+      "name": "Buzo Redondo",
+      "imagen": "../imagenes/Kimikal/cuelloredondo.jpg",
+      "price": "$11.990",
+      "id": 26,
+      "description": ""
+    },
+    {
+      "name": "Buzo Boxy",
+      "imagen": "../imagenes/Kimikal/boxy.jpg",
+      "price": "$12.990",
+      "id": 27,
+      "description": ""
+    },
+    {
+      "name": "Campera Parka",
+      "imagen": "../imagenes/Kimikal/parka.webp",
+      "price": "$22.990",
+      "id": 28,
+      "description": ""
+    },
+    {
+      "name": "Campera Hunne",
+      "imagen": "../imagenes/Kimikal/hunne.webp",
+      "price": "$19.990",
+      "id": 29,
+      "description": ""
+    },
+    {
+      "name": "Pantalon Jogger",
+      "imagen": "../imagenes/Kimikal/jogger.webp",
+      "price": "$10.990",
+      "id": 30,
+      "description": ""
+    }
+  ]
+}

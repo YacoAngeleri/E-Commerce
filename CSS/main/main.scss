@@ -33,6 +33,32 @@ article {
                 font-weight: bold;
                 text-decoration: none;
             }
+            a:hover{
+                opacity: .8;
+                color: darkblue;
+            }
+            .btn-editar{
+                border: none;
+                background-color: transparent;
+                color: green;
+                font-weight: bold;
+                padding-left: 0;
+            }
+            .btn-editar:hover{
+                opacity: .8;
+                color: darkgreen;
+            }
+            .btn-eliminar{
+                border: none;
+                background-color: transparent;
+                color: red;
+                font-weight: bold;
+                padding-left: 0;
+            }
+            .btn-eliminar:hover{
+                opacity: .8;
+                color: darkred;
+            }
             .precio{
                 display: flex;
                 color: green;

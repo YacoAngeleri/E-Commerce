@@ -139,7 +139,7 @@
 .container .box form .inputBox input:focus ~ span {
   color: #fff;
   font-size: 0.75em;
-  transform: translateX(34px);
+  transform: translateX(1px);
 }
 .container .box form .inputBox i {
   position: absolute;
@@ -193,7 +193,7 @@
 .container .box1 {
   position: relative;
   width: 20em;
-  height: 40em;
+  height: 43em;
   background-color: darkgray;
   border-radius: 8px;
   overflow: hidden;
@@ -320,7 +320,7 @@
 .container .box1 form .inputBox input:focus ~ span {
   color: #fff;
   font-size: 0.75em;
-  transform: translateX(34px);
+  transform: translateX(1px);
 }
 .container .box1 form .inputBox i {
   position: absolute;
