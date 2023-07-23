@@ -1,0 +1,24 @@
+.error{
+    background-color: darkgray;
+    border-radius: .8em;
+    text-align: center;
+    margin: 1.5em;
+    padding: .8em;
+    h1{
+        text-align: center;
+    }
+    a{
+        font-size: 2em ;
+        font-weight: bold;
+        background-color: blue;
+        padding: .3em 1.8em;
+        border-radius: .5em;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        opacity: .8;
+        color: blue;
+        background-color: white;
+    }
+}

@@ -1,0 +1,26 @@
+.error {
+  background-color: darkgray;
+  border-radius: 0.8em;
+  text-align: center;
+  margin: 1.5em;
+  padding: 0.8em;
+}
+.error h1 {
+  text-align: center;
+}
+.error a {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: blue;
+  padding: 0.3em 1.8em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: white;
+}
+.error a:hover {
+  opacity: 0.8;
+  color: blue;
+  background-color: white;
+}
+
+/*# sourceMappingURL=error.css.map */

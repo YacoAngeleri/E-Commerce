@@ -2,12 +2,12 @@ import { productoServicios } from "../Services/productos.js";
 const crearNuevaLinea = (name, imagen, price, id, description) => {
   const card = document.createElement("section");
   const contenido = `
-        <a href="productos.html?id:${id}"><img src="${imagen}"
+        <a href="Productos/${id}.html"><img src="${imagen}"
             alt="${name}"></a>
         <h5>${name}</h5>
         <p>$${price}</p>
-        <a href="productos.html?id:${id}">Ver producto</a><br>
-        <a class="btn-editar">Editar</a><br>
+        <a href="Productos/${id}.html">Ver producto</a><br>
+        <a class="btn-editar" href="../HTML/editar-producto.html?id=${id}">Editar</a><br>
         <button class="btn-eliminar" type="button" id="${id}">Eliminar</button>`;
 
   card.innerHTML = contenido;
