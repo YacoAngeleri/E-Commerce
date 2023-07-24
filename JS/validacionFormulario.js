@@ -23,6 +23,7 @@ inputs.forEach((input) => {
   });
 });
 
+
 const tipoDeErrores = [
   "valueMissing",
   "typeMismatch",

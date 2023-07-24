@@ -6,9 +6,9 @@ const crearNuevaLinea = (name, imagen, price, id, description) => {
             alt="${name}"></a>
         <h5>${name}</h5>
         <p>$${price}</p>
-        <a href="Productos/${id}.html">Ver producto</a><br>
-        <a class="btn-editar" href="../HTML/editar-producto.html?id=${id}">Editar</a><br>
-        <button class="btn-eliminar" type="button" id="${id}">Eliminar</button>`;
+        <a href="Productos/${id}.html">Ver producto <i class="bi bi-eye"></i></a><br>
+        <a class="btn-editar" href="../HTML/editar-producto.html?id=${id}">Editar <i class="bi bi-pencil-square"></i></a><br>
+        <button class="btn-eliminar" type="button" id="${id}">Eliminar <i class="bi bi-trash"></i></button>`;
 
   card.innerHTML = contenido;
   card.dataset.id = id;
@@ -31,7 +31,7 @@ const productos = document.querySelector("[data-producto]");
 
 const http = new XMLHttpRequest();
 
-http.open("GET", "http://localhost:3000/producto");
+http.open("GET", "http://localhost:3000/producto" /*https://mocki.io/v1/0bec9192-e6c3-434f-ae6d-a393a1d202ea */);
 
 http.send();
 
