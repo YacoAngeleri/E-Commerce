@@ -20,6 +20,7 @@ const crearNuevaLinea = (name, imagen, price, id, description) => {
       .eliminarCliente(id)
       .then((respuesta) => {
         console.log(respuesta);
+        location.reload();
       })
       .catch((err) => alert("Ocurrió un error"));
   });
@@ -31,7 +32,7 @@ const productos = document.querySelector("[data-producto]");
 
 const http = new XMLHttpRequest();
 
-http.open("GET", "http://localhost:3000/producto" /*https://mocki.io/v1/0bec9192-e6c3-434f-ae6d-a393a1d202ea */);
+http.open("GET", "https://64bf2af85ee688b6250d251b.mockapi.io/api/productos") /* */;
 
 http.send();
 

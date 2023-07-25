@@ -45,5 +45,5 @@ formulario.addEventListener("submit", (evento) => {
   const description = document.querySelector("[data-description]").value;
   productoServicios.actualizarCliente(imagen, name, price, description, id).then(() => {
     window.location.href = "../HTML/producto-editado.html";
-  });
+  }).catch((err) => {alert(err);});
 });
